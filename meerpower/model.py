@@ -100,7 +100,7 @@ def theta_n(nxi,nyi,nzi):
     if (nxi + nyi + nzi) % 2 == 0: return 1 # even
     else: return 0
 
-def PkMod(Pmod,dims,kbins,b1=1,b2=1,f=0,sig_v=0,Tbar1=1,Tbar2=1,r=1,R_beam1=0,R_beam2=0,sig_N=0,w1=None,w2=None,W1=None,W2=None,kcuts=None,doMultipole=False,Pk2D=False,kperpbins=None,kparabins=None,MatterRSDs=False,interpkbins=False,lwin=None,pixwin=None,s_pix1=0,s_pix2=0,s_para1=0,s_para2=0,Damp=None,reGriddamp=False,gridinterp=False):
+def PkMod(Pmod,dims,kbins,b1=1,b2=1,f=0,sig_v=0,Tbar1=1,Tbar2=1,r=1,R_beam1=0,R_beam2=0,sig_N=0,w1=None,w2=None,W1=None,W2=None,kcuts=None,doMultipole=False,Pk2D=False,kperpbins=None,kparabins=None,MatterRSDs=False,interpkbins=True,lwin=None,pixwin=None,s_pix1=0,s_pix2=0,s_para1=0,s_para2=0,Damp=None,reGriddamp=False,gridinterp=False):
     ### r is cross-correlation coeficient if doing a cross-correlation, set all _1 and _2 parameters
     ###  equal if doing an auto correlation
     #if len(dims)==6: lx,ly,lz,nx,ny,nz = dims
